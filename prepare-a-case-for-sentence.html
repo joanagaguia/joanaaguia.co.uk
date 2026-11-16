@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helping probation officers get ready for court | Joana Águia</title>
+<meta name="description" content="Evolving Prepare a Case for Sentence from a view-only service into an interactive court case tracker, now live in 150 courts.">
+<meta property="og:title" content="Helping probation officers get ready for court">
+<meta property="og:description" content="Evolving a view-only service into an interactive court case tracker.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%233f14ff'/%3E%3Cpath d='M6 26 16 6l10 20' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500&family=Spline+Sans+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+  <nav class="cs-back" aria-label="Main">
+    <a href="index.html" class="name">Joana Águia</a>
+    <a href="index.html#work">All work</a>
+  </nav>
+
+  <main class="flow">
+    <header class="flow-intro">
+      <p class="mono">Prepare a Case for Sentence, HMPPS</p>
+      <h1>Helping probation officers get ready for court</h1>
+      <p class="subtitle">Evolving a view-only service into an interactive court case tracker</p>
+      <p>Prepare a Case for Sentence shows every person appearing in court on a given day. If they have already been looked after by probation, the service shows data about their current or previous offences, orders and risk. It is used by court probation staff and court administrators. I joined the team when the service went into <strong>private beta</strong>, and since then I have helped evolve it from a read-only service into a transactional one.</p>
+      <dl class="flow-facts">
+        <div><dt>Role</dt><dd>Interaction design</dd></div>
+        <div><dt>Client</dt><dd>Ministry of Justice</dd></div>
+        <div><dt>Year</dt><dd>2021 to 2023</dd></div>
+        <div><dt>Skills used</dt><dd><ul class="skills"><li>Interaction design</li><li>Prototyping</li></ul></dd></div>
+      </dl>
+    </header>
+
+    <figure class="cs-figure centre">
+      <a href="images/prepare-a-case/service.png"><img src="images/prepare-a-case/service.png" width="1206" height="1004" alt="The Hearing outcomes page in Prepare a Case for Sentence, listing defendants with their outcome type, offence, hearing date and a Mark as done button."></a>
+    </figure>
+
+    <section>
+      <h2>The problem</h2>
+      <p>Probation practitioners and administrators are tracking cases through court manually, on paper or with basic digital tools. This makes the data hard to manage and puts a large administrative burden on courts. As courts are encouraged to process more cases more quickly because of growing backlogs, these difficulties are likely to get worse. There’s an opportunity to make things easier for probation staff in court.</p>
+      <p class="hmw">How might we make it easier for court probation staff to process cases from first appearance to sentencing?</p>
+    </section>
+
+    <section>
+      <h2>Key facts</h2>
+      <ul class="squares">
+        <li>Every court works differently. There is no standard way of tracking cases, and some courts, like Bristol, don’t track them at all.</li>
+        <li>Probation teams are understaffed and working at, or most likely over, capacity.</li>
+        <li>Wifi in courts is patchy and unreliable.</li>
+        <li>One of Probation Digital’s goals is to reduce the administrative burden on probation practitioners.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>The process</h2>
+      <figure class="cs-figure">
+        <a href="images/prepare-a-case/research-liverpool.jpg"><img src="images/prepare-a-case/research-liverpool.jpg" width="1316" height="623" loading="lazy" alt="Two people at a court office desk, looking at a laptop showing a case tracking spreadsheet."></a>
+        <figcaption>Conducting user research in Liverpool Court</figcaption>
+      </figure>
+      <p>The user researcher and I started with in-person observational research in six courts across the country, to understand the current process. From there, we uncovered the user needs that shaped our design hypothesis.</p>
+      <figure class="cs-figure">
+        <a href="images/prepare-a-case/as-is-map.png"><img src="images/prepare-a-case/as-is-map.png" width="1316" height="623" loading="lazy" alt="A journey map of sticky notes across three stages: advance preparation, in court and after court, with rows for tasks, needs, pain points and opportunities."></a>
+        <figcaption>Map showing the current journey</figcaption>
+      </figure>
+      <p>We also met our stakeholders, the Central Court Team, to understand business needs and requirements.</p>
+      <p>We recognised this was a mammoth project, and the work and change could be overwhelming for both the team and our users. To manage this and work in an agile way, the user researcher and I developed a release plan, supported by our main design hypothesis.</p>
+      <div class="hypothesis">
+        <p class="label">Design hypothesis</p>
+        <p>By giving probation practitioners a way to add information to a case, see cases in the past and share a case with a colleague, we will be able to replace paper case trackers.</p>
+      </div>
+      <p>Our design hypothesis broke the work down into four main features:</p>
+      <ul class="squares">
+        <li><strong>Case comments.</strong> We expected admin to use this feature to add notes about how the case is being dealt with, adding bits of information throughout the case’s life cycle.</li>
+        <li><strong>Hearing progress.</strong> We displayed a timeline of all the hearings, with a way to add notes to each one. We expected court duty officers to type notes as the hearing unfolded, based on our observational research.</li>
+        <li><strong>Past navigation.</strong> For those notes and comments to be found, users would need an easy way to get back to those cases.</li>
+        <li>Court admin and court duty officers could use <strong>email as a way of sharing cases</strong> with each other.</li>
+      </ul>
+      <div class="figure-pair">
+        <figure class="cs-figure">
+          <a href="images/prepare-a-case/user-needs-board.png"><img src="images/prepare-a-case/user-needs-board.png" width="772" height="471" loading="lazy" alt="A Miro board titled Case Tracking Exploration, with sections for user needs, case lifecycle and court visit notes."></a>
+        </figure>
+        <figure class="cs-figure">
+          <a href="images/prepare-a-case/design-ideation.png"><img src="images/prepare-a-case/design-ideation.png" width="597" height="557" loading="lazy" alt="Photos of hand-drawn paper sketches of case tracker screens, grouped under the heading Design ideation."></a>
+        </figure>
+      </div>
+      <figure class="cs-figure">
+        <a href="images/prepare-a-case/mvp-workflow-first.png"><img src="images/prepare-a-case/mvp-workflow-first.png" width="1316" height="623" loading="lazy" alt="Slide titled Our first attempt at an MVP workflow: the court duty officer captures hearing outcomes, emails a link to the case, admin opens the case to view the outcome, then uses it to update nDelius."></a>
+        <figcaption>Our first iteration at designing these new features for our users</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Iterating the designs</h2>
+      <p>Case comments, hearing progress and past navigation were validated. Sharing cases by email failed: we learned that email was not a viable way to tell admin about progress on a case, as staff received dozens of emails an hour.</p>
+      <figure class="cs-figure">
+        <a href="images/prepare-a-case/mvp-workflow-new.png"><img src="images/prepare-a-case/mvp-workflow-new.png" width="1316" height="623" loading="lazy" alt="The same workflow slide, titled We need a new MVP workflow, with the email step crossed out in red."></a>
+      </figure>
+      <p>Based on this insight, we moved away from email as the main way of sharing cases and developed a dashboard that let admins manage their workload. We called this “the workflow”.</p>
+      <p>Through three rounds of research over three months, we refined this approach until we were confident it met our users’ needs and provided a minimum viable product.</p>
+      <p>This was our riskiest piece of design, so testing its boundaries was extremely important.</p>
+      <p>Keeping in mind that all courts would eventually have to adopt our new system, we researched and validated it with dozens of users who tracked their cases in a variety of ways.</p>
+      <figure class="cs-figure centre">
+        <a href="images/prepare-a-case/workflow-iterations.png"><img src="images/prepare-a-case/workflow-iterations.png" width="837" height="960" loading="lazy" alt="A board of connected screen designs titled Workflow designs iteration 2, January 2023, showing a court duty officer journey and three admin journeys."></a>
+      </figure>
+      <div class="explorations">
+        <figure class="cs-figure">
+          <div class="exploration-set">
+            <a href="images/prepare-a-case/exploration-2.png"><img src="images/prepare-a-case/exploration-2.png" width="373" height="376" loading="lazy" alt="Early design of the outcomes page, with a resulting status dropdown on each case."></a>
+            <a href="images/prepare-a-case/exploration-3.png"><img src="images/prepare-a-case/exploration-3.png" width="373" height="363" loading="lazy" alt="Early design of the outcomes page, with a Mark as done checkbox on each case."></a>
+            <a href="images/prepare-a-case/exploration-1.png"><img src="images/prepare-a-case/exploration-1.png" width="373" height="479" loading="lazy" alt="Early design of the outcomes page, splitting cases into To do, In progress and Completed tables."></a>
+          </div>
+          <figcaption>Initial design explorations</figcaption>
+        </figure>
+        <figure class="cs-figure">
+          <a href="images/prepare-a-case/final-design.png"><img src="images/prepare-a-case/final-design.png" width="610" height="766" loading="lazy" alt="The final Hearing outcomes design, with tabs for cases to result, in progress and resulted cases, filters, and a Move to resulted button on each case."></a>
+          <figcaption>Final design</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>The outcome</h2>
+      <p>The first three features went live in 150 courts across England and Wales, after a short pilot with Liverpool and Plymouth. They’ve been providing great value to users, and adoption has been really positive.</p>
+      <p>The workflow was piloted with three courts of different sizes, and the service went live in its entirety in March 2024. Satisfaction with the service rose by 48%.</p>
+      <p>This project was challenging on many levels. It pushed me outside my comfort zone and required me to develop new skills as a designer.</p>
+      <ul class="squares">
+        <li><strong>Starting simple and small.</strong> Developing a new workflow for two groups of users while keeping a “start simple and small” mentality was incredibly complex. Applying agile methods without allowing scope creep was a challenge.</li>
+        <li><strong>Designing for multiple contexts.</strong> Some of our users are in court, where wifi is patchy, so the designs for them were one-pagers, with less chance of losing signal while clicking between tabs. Court admin look at large amounts of data that needs prioritising, so for them I focused on an organised, customisable interface, so they could decide how best to do their tasks.</li>
+        <li><strong>Wearing a product manager’s hat.</strong> I decided on the prioritisation of features, how best to break down the work, and what “good enough” looks like for a service that would have no further iterations.</li>
+      </ul>
+      <h3>User feedback</h3>
+      <blockquote class="quote">
+        <p>“As far as workloads go, this would do away with all the trackers. With one for each case that comes in, you can imagine it’s a lot of work. This will be a live system, we won’t miss anything because it’s all there live. That’s the beauty of this: it removes human error from typing between systems.”</p>
+        <cite>Probation officer</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>“It’s so much easier. All the things that I pretty much need are here, rather than jumping back and forth to different systems all the time.”</p>
+        <cite>Court administrator</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <nav class="cs-next" aria-label="Next case study">
+    <a href="index.html#work">Back to all work</a>
+  </nav>
+
+  <footer id="contact">
+    <a href="mailto:joanagarciasaguia@gmail.com">joanagarciasaguia@gmail.com</a>
+    <a href="https://www.linkedin.com/in/joana-aguia">LinkedIn</a>
+  </footer>
+</div>
+
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged image">
+  <button type="button" class="lightbox-close" aria-label="Close image">×</button>
+  <img alt="">
+  <p class="lightbox-caption mono"></p>
+</dialog>
+<script>
+(function () {
+  var box = document.getElementById('lightbox');
+  if (!box || !box.showModal) return; // older browsers just open the image
+  var img = box.querySelector('img'), cap = box.querySelector('.lightbox-caption');
+  document.querySelectorAll('.cs-figure a').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var fc = a.closest('figure').querySelector('figcaption');
+      img.src = a.getAttribute('href'); img.alt = a.querySelector('img').alt;
+      cap.textContent = fc ? fc.textContent : '';
+      box.showModal();
+    });
+  });
+  box.querySelector('.lightbox-close').addEventListener('click', function () { box.close(); });
+  box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+  box.addEventListener('close', function () { img.removeAttribute('src'); });
+})();
+</script>
+</body>
+</html>
