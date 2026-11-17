@@ -182,3 +182,7 @@ footer a { overflow-wrap: anywhere; }
 .exploration-set a:last-child { grid-column: 1 / -1; justify-self: center; width: 60%; }
 .explorations .cs-figure img { max-height: 420px; box-shadow: 0 4px 4px rgba(21, 22, 28, .2); }
 .cs-next a { font-size: clamp(17px, 1.5vw, 20px); }
+.pillars { display: flex; flex-direction: column; gap: 12px; border-left: 3px solid var(--accent); padding-left: 18px; }
+.figure-note { color: var(--muted); margin-top: -8px; }
+.quote { display: flex; flex-direction: column; gap: 12px; }
+.image-missing { display: grid; place-items: center; min-height: 240px; border: 1px dashed var(--muted); color: var(--muted); font: 400 14px/1.45 var(--mono); padding: 16px; text-align: center; }
