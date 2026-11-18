@@ -93,6 +93,7 @@ h1 {
 
 footer { margin-top: clamp(40px, 6vw, 80px); border-top: 1px solid var(--ink); padding-block: 24px; }
 footer a { overflow-wrap: anywhere; }
+.credit { flex: 1 1 100%; margin: 0; font: 400 14px/1.45 var(--mono); color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

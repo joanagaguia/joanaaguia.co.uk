@@ -112,6 +112,11 @@ h1 {
 
 footer { margin-top: clamp(40px, 6vw, 80px); border-top: 1px solid var(--ink); padding-block: 24px; }
 footer a { overflow-wrap: anywhere; }
+.credit { flex: 1 1 100%; margin: 0; font: 400 14px/1.45 var(--mono); color: var(--muted); }
+.availability { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; border-block: 1px solid var(--ink); padding-block: 14px; max-width: 34em; }
+.availability strong { display: inline-flex; align-items: center; gap: 10px; font-weight: 500; }
+.availability strong::before { content: ""; width: 10px; height: 10px; background: var(--accent); flex: none; }
+.availability span { font: 400 14px/1.45 var(--mono); color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -135,8 +140,9 @@ footer a { overflow-wrap: anywhere; }
 
   <header class="hero">
     <div class="hero-text">
-      <h1>Contractor service and interaction designer. I care about solving the right problem.</h1>
+      <h1>Senior service and interaction designer. I care about solving the right problem.</h1>
       <p>I use problem framing, consequences scanning and prototyping to help organisations solve real problems, while keeping users at the centre of everything they do.</p>
+      <p class="availability"><strong>Available for contract roles in 2027</strong><span>On contract with DWP until December 2026</span></p>
     </div>
     <figure class="horizons">
       <svg viewBox="0 0 560 340" role="img" aria-label="Three Horizons diagram: today’s system declines, a transition rises and falls, and an emerging future grows.">
@@ -210,6 +216,7 @@ footer a { overflow-wrap: anywhere; }
   <footer id="contact">
     <a href="mailto:joanagarciasaguia@gmail.com">joanagarciasaguia@gmail.com</a>
     <a href="https://www.linkedin.com/in/joana-aguia">LinkedIn</a>
+    <p class="credit">Website designed with Claude ❤️</p>
   </footer>
 </div>
 
